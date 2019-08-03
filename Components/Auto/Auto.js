@@ -17,7 +17,7 @@ export default class Auto extends Component {
   };
 
   componentDidMount() {
-    this.fetchSportsFromBackend();
+    this.fetchAutoFromBackend();
   }
 
   fetchAutoFromBackend() {
