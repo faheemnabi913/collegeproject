@@ -1,26 +1,34 @@
-import Movies from "./Components/Movies/Movies";
-import News from "./Components/News/NewsNavigator/News";
-import ContentContainer from "./Components/Homescreen/ContentContainer";
 import { createStackNavigator, createAppContainer } from "react-navigation";
-import Crypto from "./Components/Cryptocurrency/Crypto";
-import CryptoDetails from "./Components/Cryptocurrency/CryptoDetails";
-import MovieDetails from "./Components/Movies/MovieDetails";
+
+import ContentContainer from "./Components/Homescreen/ContentContainer";
+import CategoryDetails from "./Components/HorizontalNavigator/CategoryDetails";
+import News from "./Components/News/NewsNavigator/News";
 import Videos from "./Components/Videos/Videos";
 import VideoDetails from "./Components/Videos/VideoDetails";
-import Music from "./Components/Music/Music";
-import CategoryDetails from "./Components/HorizontalNavigator/CategoryDetails";
+import Podcast from "./Components/Podcast/Podcast";
+import PodPlay from "./Components/PodPlay/Podplay";
+import Movies from "./Components/Movies/Movies";
+import MovieDetails from "./Components/Movies/MovieDetails";
+import Crypto from "./Components/Cryptocurrency/Crypto";
+import CryptoDetails from "./Components/Cryptocurrency/CryptoDetails";
+import Auto from "./Components/Auto/Auto";
+import AutoDetails from "./Components/Auto/AutoDetails";
+
 const AppNavigator = createStackNavigator(
   {
     Home: ContentContainer,
-    Movies: Movies,
     CategoryDetails: CategoryDetails,
     News: News,
-    Cryptocurrency: Crypto,
-    CryptoDetails: CryptoDetails,
-    MovieDetails: MovieDetails,
     Videos: Videos,
     VideoDetails: VideoDetails,
-    Music: Music
+    Podcast: Podcast,
+    PodPlay: PodPlay,
+    Movies: Movies,
+    MovieDetails: MovieDetails,
+    Cryptocurrency: Crypto,
+    CryptoDetails: CryptoDetails,
+    Auto: Auto,
+    AutoDetails: AutoDetails
   },
   {
     initialRouteName: "Home"
